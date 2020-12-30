@@ -2,6 +2,8 @@ pragma solidity >=0.6.0 <0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
+import "@openzeppelin/contracts/ownership/Ownable.sol";
+import "@openzeppelin/contracts/lifecycle/Pausable.sol";
 
 contract invoice is ERC721 {
     using Counters for Counters.Counter;
